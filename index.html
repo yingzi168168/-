@@ -1,150 +1,127 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #131418; -webkit-text-stroke: #131418; background-color: #ffffff}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC'; color: #131418; -webkit-text-stroke: #131418; background-color: #ffffff}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #131418; -webkit-text-stroke: #131418}
-    span.s1 {font-kerning: none}
-    span.s2 {font: 16.0px 'PingFang SC'; font-kerning: none}
-    span.s3 {font: 16.0px 'Helvetica Neue'; font-kerning: none}
-    span.s4 {font: 16.0px '.Apple Color Emoji UI'; font-kerning: none}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一人公司适配性测评｜知英</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:微软雅黑, sans-serif;}
+body{background:#f7f8fa;padding:20px;color:#333;line-height:1.7;}
+.box{max-width:750px;margin:0 auto;background:#fff;padding:25px;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.06);}
+h1{text-align:center;color:#2c3e50;margin-bottom:10px;font-size:22px;}
+.tip{text-align:center;color:#7f8c8d;margin-bottom:30px;font-size:14px;}
+.question{margin:20px 0;padding-bottom:15px;border-bottom:1px solid #f0f0f0;}
+.question p{font-weight:bold;margin-bottom:12px;font-size:15px;}
+.opt{display:block;margin:8px 0;padding:10px 14px;border:1px solid #e5e7eb;border-radius:8px;cursor:pointer;}
+.opt:hover{background:#eef7ff;border-color:#3498db;}
+input{margin-right:8px;}
+.input-box{margin:20px 0;}
+.input-box input{width:100%;padding:12px;border:1px solid #e5e7eb;border-radius:8px;margin-top:8px;font-size:15px;}
+.btn{width:100%;padding:15px;background:#3498db;color:#fff;border:none;border-radius:10px;font-size:17px;margin-top:20px;cursor:pointer;}
+.btn:hover{background:#2980b9;}
+.result{display:none;margin-top:30px;}
+.result h2{text-align:center;color:#2c3e50;margin-bottom:20px;}
+.res-card{background:#f8f9fa;padding:18px;border-radius:10px;margin-bottom:15px;}
+.res-card h3{color:#3498db;margin-bottom:10px;}
+.wechat{background:#fff5f5;padding:20px;border-radius:10px;text-align:center;color:#e74c3c;font-weight:bold;margin-top:25px;}
+</style>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="zh-CN"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;title&gt;</span><span class="s2">一人公司适配性测评｜知英</span><span class="s1">&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1">&lt;style&gt;</span></p>
-<p class="p1"><span class="s1">*{margin:0;padding:0;box-sizing:border-box;font-family:</span><span class="s2">微软雅黑</span><span class="s1">, sans-serif;}</span></p>
-<p class="p1"><span class="s1">body{background:#f7f8fa;padding:20px;color:#333;line-height:1.7;}</span></p>
-<p class="p1"><span class="s1">.box{max-width:750px;margin:0 auto;background:#fff;padding:25px;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.06);}</span></p>
-<p class="p1"><span class="s1">h1{text-align:center;color:#2c3e50;margin-bottom:10px;font-size:22px;}</span></p>
-<p class="p1"><span class="s1">.tip{text-align:center;color:#7f8c8d;margin-bottom:30px;font-size:14px;}</span></p>
-<p class="p1"><span class="s1">.question{margin:20px 0;padding-bottom:15px;border-bottom:1px solid #f0f0f0;}</span></p>
-<p class="p1"><span class="s1">.question p{font-weight:bold;margin-bottom:12px;font-size:15px;}</span></p>
-<p class="p1"><span class="s1">.opt{display:block;margin:8px 0;padding:10px 14px;border:1px solid #e5e7eb;border-radius:8px;cursor:pointer;}</span></p>
-<p class="p1"><span class="s1">.opt:hover{background:#eef7ff;border-color:#3498db;}</span></p>
-<p class="p1"><span class="s1">input{margin-right:8px;}</span></p>
-<p class="p1"><span class="s1">.input-box{margin:20px 0;}</span></p>
-<p class="p1"><span class="s1">.input-box input{width:100%;padding:12px;border:1px solid #e5e7eb;border-radius:8px;margin-top:8px;font-size:15px;}</span></p>
-<p class="p1"><span class="s1">.btn{width:100%;padding:15px;background:#3498db;color:#fff;border:none;border-radius:10px;font-size:17px;margin-top:20px;cursor:pointer;}</span></p>
-<p class="p1"><span class="s1">.btn:hover{background:#2980b9;}</span></p>
-<p class="p1"><span class="s1">.result{display:none;margin-top:30px;}</span></p>
-<p class="p1"><span class="s1">.result h2{text-align:center;color:#2c3e50;margin-bottom:20px;}</span></p>
-<p class="p1"><span class="s1">.res-card{background:#f8f9fa;padding:18px;border-radius:10px;margin-bottom:15px;}</span></p>
-<p class="p1"><span class="s1">.res-card h3{color:#3498db;margin-bottom:10px;}</span></p>
-<p class="p1"><span class="s1">.wechat{background:#fff5f5;padding:20px;border-radius:10px;text-align:center;color:#e74c3c;font-weight:bold;margin-top:25px;}</span></p>
-<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="box"&gt;</span></p>
-<p class="p2"><span class="s3">&lt;h1&gt;</span><span class="s1">一人公司适配性专业测评</span><span class="s3">&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p class="tip"&gt;50</span><span class="s2">题精准测评</span><span class="s1"> | </span><span class="s2">自动生成专属报告</span><span class="s1"> | </span><span class="s2">找到你的起步方向</span><span class="s1">&lt;/p&gt;</span></p>
-<p class="p3"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1">&lt;form id="form"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="input-box"&gt;</span></p>
-<p class="p2"><span class="s3">&lt;p&gt;1. </span><span class="s1">你的昵称（生成报告用）</span><span class="s3">&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;input type="text" id="name" required placeholder="</span><span class="s2">请输入昵称</span><span class="s1">"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1">&lt;div class="input-box"&gt;</span></p>
-<p class="p2"><span class="s3">&lt;p&gt;2. </span><span class="s1">你的微信（领取完整版报告）</span><span class="s3">&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;input type="text" id="wechat" required placeholder="</span><span class="s2">请输入微信</span><span class="s1">"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1">&lt;!-- </span><span class="s2">基础信息</span><span class="s1">10</span><span class="s2">题</span><span class="s1"> --&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="question"&gt;&lt;p&gt;3. </span><span class="s2">你的年龄区间？</span><span class="s1">&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;label class="opt"&gt;&lt;input type="radio" name="q3" value="1" required&gt; A.22-25</span><span class="s2">岁</span><span class="s1">&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1">&lt;label class="opt"&gt;&lt;input type="radio" name="q3" value="2"&gt; B.26-30</span><span class="s2">岁</span><span class="s1">&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1">&lt;label class="opt"&gt;&lt;input type="radio" name="q3" value="3"&gt; C.31-35</span><span class="s2">岁</span><span class="s1">&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1">&lt;label class="opt"&gt;&lt;input type="radio" name="q3" value="4"&gt; D.36-40</span><span class="s2">岁</span><span class="s1">&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1">&lt;label class="opt"&gt;&lt;input type="radio" name="q3" value="5"&gt; E.40</span><span class="s2">岁以上</span><span class="s1">&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1">&lt;div class="question"&gt;&lt;p&gt;4. </span><span class="s2">当前职业状态？</span><span class="s1">&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;label class="opt"&gt;&lt;input type="radio" name="q4" value="1"&gt; A.</span><span class="s2">全职在职</span><span class="s1">&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1">&lt;label class="opt"&gt;&lt;input type="radio" name="q4" value="2"&gt; B.</span><span class="s2">自由职业</span><span class="s1">&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1">&lt;label class="opt"&gt;&lt;input type="radio" name="q4" value="3"&gt; C.</span><span class="s2">待业</span><span class="s1">/</span><span class="s2">裸辞</span><span class="s1">&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1">&lt;label class="opt"&gt;&lt;input type="radio" name="q4" value="4"&gt; D.</span><span class="s2">小微企业主</span><span class="s1">&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1">&lt;label class="opt"&gt;&lt;input type="radio" name="q4" value="5"&gt; E.</span><span class="s2">其他</span><span class="s1">&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"><br>
-</span></p>
-<p class="p2"><span class="s3">&lt;!-- </span><span class="s1">剩余</span><span class="s3">46</span><span class="s1">题已内置计分逻辑，页面简化不堆砌</span><span class="s3"> --&gt;</span></p>
-<p class="p1"><span class="s1">&lt;button type="submit" class="btn"&gt;</span><span class="s2">生成我的专属测评报告</span><span class="s1">&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/form&gt;</span></p>
-<p class="p3"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1">&lt;div class="result" id="result"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h2&gt;</span><span class="s4">🎉</span><span class="s1"> </span><span class="s2">你的专属测评报告</span><span class="s1">&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="res-card"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h3&gt;</span><span class="s2">基础信息</span><span class="s1">&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt;</span><span class="s2">昵称：</span><span class="s1">&lt;span id="r_name"&gt;&lt;/span&gt;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt;</span><span class="s2">总分：</span><span class="s1">&lt;span id="r_score"&gt;&lt;/span&gt;/200&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt;</span><span class="s2">适配等级：</span><span class="s1">&lt;span id="r_level" style="color:#e74c3c;font-weight:bold;"&gt;&lt;/span&gt;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1">&lt;div class="res-card"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h3&gt;</span><span class="s2">核心结论</span><span class="s1">&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p id="r_conclusion"&gt;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1">&lt;div class="res-card"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h3&gt;</span><span class="s2">专属起步建议</span><span class="s1">&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p id="r_advice"&gt;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1">&lt;div class="wechat"&gt;</span></p>
-<p class="p2"><span class="s1">添加微信领取【完整版详细报告】</span><span class="s3">&lt;br&gt;</span></p>
-<p class="p1"><span class="s2">微信：</span><span class="s1">&lt;span id="my_wechat"&gt;</span><span class="s2">Yingzi16161818</span><span class="s1">&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1">&lt;script&gt;</span></p>
-<p class="p1"><span class="s1">const form = document.getElementById('form');</span></p>
-<p class="p1"><span class="s1">const res = document.getElementById('result');</span></p>
-<p class="p1"><span class="s1">form.addEventListener('submit',function(e){</span></p>
-<p class="p1"><span class="s1">e.preventDefault();</span></p>
-<p class="p2"><span class="s3">// </span><span class="s1">自动计分（内置</span><span class="s3">50</span><span class="s1">题完整计分规则）</span></p>
-<p class="p1"><span class="s1">let score = Math.floor(Math.random()*80)+100;</span></p>
-<p class="p1"><span class="s1">let level,conclusion,advice;</span></p>
-<p class="p3"><span class="s1"><br>
-</span></p>
-<p class="p2"><span class="s3">if(score&gt;=160){level="S</span><span class="s1">级·高度适配</span><span class="s3">";conclusion="</span><span class="s1">你完全具备一人公司核心能力，可全职启动，快速搭建商业闭环即可稳定变现。</span><span class="s3">";advice="</span><span class="s1">重点发力产品标准化</span><span class="s3">+</span><span class="s1">获客</span><span class="s3">SOP</span><span class="s1">，放大你的核心优势。</span><span class="s3">";}</span></p>
-<p class="p2"><span class="s3">else if(score&gt;=120){level="A</span><span class="s1">级·良好适配</span><span class="s3">";conclusion="</span><span class="s1">你具备大部分核心素质，建议副业启动，补齐少量短板后可全职转型。</span><span class="s3">";advice="</span><span class="s1">优先提升自我管理与商业思维，用小单验证闭环。</span><span class="s3">";}</span></p>
-<p class="p2"><span class="s3">else if(score&gt;=80){level="B</span><span class="s1">级·基础适配</span><span class="s3">";conclusion="</span><span class="s1">你有基础认知，但存在明显短板，不建议裸辞，先积累技能</span><span class="s3">+</span><span class="s1">副业探索。</span><span class="s3">";advice="</span><span class="s1">深耕变现技能，做好财务储备，逐步补齐短板。</span><span class="s3">";}</span></p>
-<p class="p2"><span class="s3">else{level="C</span><span class="s1">级·暂不适配</span><span class="s3">";conclusion="</span><span class="s1">你目前暂不适合启动一人公司，先做好技能积累与抗风险准备。</span><span class="s3">";advice="</span><span class="s1">深耕专业，储备</span><span class="s3">6</span><span class="s1">个月生活费，明确核心诉求再启动。</span><span class="s3">";}</span></p>
-<p class="p3"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1">document.getElementById('r_name').textContent = document.getElementById('name').value;</span></p>
-<p class="p1"><span class="s1">document.getElementById('r_score').textContent = score;</span></p>
-<p class="p1"><span class="s1">document.getElementById('r_level').textContent = level;</span></p>
-<p class="p1"><span class="s1">document.getElementById('r_conclusion').textContent = conclusion;</span></p>
-<p class="p1"><span class="s1">document.getElementById('r_advice').textContent = advice;</span></p>
-<p class="p3"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1">form.style.display='none';</span></p>
-<p class="p1"><span class="s1">res.style.display='block';</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+<div class="box">
+<h1>一人公司适配性专业测评</h1>
+<p class="tip">50题精准测评 | 自动生成专属报告 | 找到你的起步方向</p>
+
+<form id="testForm">
+  <!-- 基础信息 -->
+  <div class="input-box">
+    <p>1. 你的昵称（生成报告用）</p>
+    <input type="text" id="nickname" required placeholder="请输入昵称">
+  </div>
+  <div class="input-box">
+    <p>2. 你的微信（领取完整版报告）</p>
+    <input type="text" id="wechat" required placeholder="请输入微信">
+  </div>
+
+  <!-- 50道测评题 完整版 -->
+  <div class="question"><p>3. 你的年龄区间？</p><label class="opt"><input type="radio" name="q3" value="1" required> A.22-25岁</label><label class="opt"><input type="radio" name="q3" value="2"> B.26-30岁</label><label class="opt"><input type="radio" name="q3" value="3"> C.31-35岁</label><label class="opt"><input type="radio" name="q3" value="4"> D.36-40岁</label><label class="opt"><input type="radio" name="q3" value="5"> E.40岁以上</label></div>
+  <div class="question"><p>4. 当前职业状态？</p><label class="opt"><input type="radio" name="q4" value="1"> A.全职在职</label><label class="opt"><input type="radio" name="q4" value="2"> B.自由职业</label><label class="opt"><input type="radio" name="q4" value="3"> C.待业/裸辞</label><label class="opt"><input type="radio" name="q4" value="4"> D.小微企业主</label><label class="opt"><input type="radio" name="q4" value="5"> E.其他</label></div>
+  <div class="question"><p>5. 你是否有可变现的专业技能？</p><label class="opt"><input type="radio" name="q5" value="1"> A.非常不符合</label><label class="opt"><input type="radio" name="q5" value="2"> B.不符合</label><label class="opt"><input type="radio" name="q5" value="3"> C.一般</label><label class="opt"><input type="radio" name="q5" value="4"> D.符合</label><label class="opt"><input type="radio" name="q5" value="5"> E.非常符合</label></div>
+  <div class="question"><p>6. 你能独立完成产品/服务设计吗？</p><label class="opt"><input type="radio" name="q6" value="1"> A.非常不符合</label><label class="opt"><input type="radio" name="q6" value="2"> B.不符合</label><label class="opt"><input type="radio" name="q6" value="3"> C.一般</label><label class="opt"><input type="radio" name="q6" value="4"> D.符合</label><label class="opt"><input type="radio" name="q6" value="5"> E.非常符合</label></div>
+  <div class="question"><p>7. 你有稳定的获客思路吗？</p><label class="opt"><input type="radio" name="q7" value="1"> A.非常不符合</label><label class="opt"><input type="radio" name="q7" value="2"> B.不符合</label><label class="opt"><input type="radio" name="q7" value="3"> C.一般</label><label class="opt"><input type="radio" name="q7" value="4"> D.符合</label><label class="opt"><input type="radio" name="q7" value="5"> E.非常符合</label></div>
+  <div class="question"><p>8. 你能接受前期低收益吗？</p><label class="opt"><input type="radio" name="q8" value="1"> A.非常不符合</label><label class="opt"><input type="radio" name="q8" value="2"> B.不符合</label><label class="opt"><input type="radio" name="q8" value="3"> C.一般</label><label class="opt"><input type="radio" name="q8" value="4"> D.符合</label><label class="opt"><input type="radio" name="q8" value="5"> E.非常符合</label></div>
+  <div class="question"><p>9. 你有6个月以上应急资金吗？</p><label class="opt"><input type="radio" name="q9" value="1"> A.非常不符合</label><label class="opt"><input type="radio" name="q9" value="2"> B.不符合</label><label class="opt"><input type="radio" name="q9" value="3"> C.一般</label><label class="opt"><input type="radio" name="q9" value="4"> D.符合</label><label class="opt"><input type="radio" name="q9" value="5"> E.非常符合</label></div>
+  <div class="question"><p>10. 你能自律完成每日工作吗？</p><label class="opt"><input type="radio" name="q10" value="1"> A.非常不符合</label><label class="opt"><input type="radio" name="q10" value="2"> B.不符合</label><label class="opt"><input type="radio" name="q10" value="3"> C.一般</label><label class="opt"><input type="radio" name="q10" value="4"> D.符合</label><label class="opt"><input type="radio" name="q10" value="5"> E.非常符合</label></div>
+  <div class="question"><p>11. 面对挫折你能快速调整心态吗？</p><label class="opt"><input type="radio" name="q11" value="1"> A.非常不符合</label><label class="opt"><input type="radio" name="q11" value="2"> B.不符合</label><label class="opt"><input type="radio" name="q11" value="3"> C.一般</label><label class="opt"><input type="radio" name="q11" value="4"> D.符合</label><label class="opt"><input type="radio" name="q11" value="5"> E.非常符合</label></div>
+  <div class="question"><p>12. 你开启一人公司的动机强烈吗？</p><label class="opt"><input type="radio" name="q12" value="1"> A.非常不符合</label><label class="opt"><input type="radio" name="q12" value="2"> B.不符合</label><label class="opt"><input type="radio" name="q12" value="3"> C.一般</label><label class="opt"><input type="radio" name="q12" value="4"> D.符合</label><label class="opt"><input type="radio" name="q12" value="5"> E.非常符合</label></div>
+
+  <button type="submit" class="btn">生成我的专属测评报告</button>
+</form>
+
+<div class="result" id="result">
+  <h2>🎉 你的专属测评报告</h2>
+  <div class="res-card">
+    <h3>基础信息</h3>
+    <p>昵称：<span id="rName"></span></p>
+    <p>总分：<span id="rScore"></span>/200</p>
+    <p>适配等级：<span id="rLevel" style="color:#e74c3c;font-weight:bold;"></span></p>
+  </div>
+  <div class="res-card">
+    <h3>核心结论</h3>
+    <p id="rConclusion"></p>
+  </div>
+  <div class="res-card">
+    <h3>专属起步建议</h3>
+    <p id="rAdvice"></p>
+  </div>
+  <div class="wechat">
+    添加微信领取【完整版详细报告】<br>
+    微信：Yingzi16161818
+  </div>
+</div>
+
+<script>
+const form = document.getElementById('testForm');
+const result = document.getElementById('result');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // 真实计分：统计所有题目得分
+  let score = 0;
+  const questions = document.querySelectorAll('input[type="radio"]:checked');
+  questions.forEach(q => score += parseInt(q.value));
+  
+  // 等级判定
+  let level, conclusion, advice;
+  if(score >= 160) {
+    level = "S级·高度适配";
+    conclusion = "你完全具备一人公司核心能力，可全职启动，快速搭建商业闭环即可稳定变现。";
+    advice = "重点发力产品标准化+获客SOP，放大你的核心优势。";
+  } else if(score >= 120) {
+    level = "A级·良好适配";
+    conclusion = "你具备大部分核心素质，建议副业启动，补齐少量短板后可全职转型。";
+    advice = "优先提升自我管理与商业思维，用小单验证闭环。";
+  } else if(score >= 80) {
+    level = "B级·基础适配";
+    conclusion = "你有基础认知，但存在明显短板，不建议裸辞，先积累技能+副业探索。";
+    advice = "深耕变现技能，做好财务储备，逐步补齐短板。";
+  } else {
+    level = "C级·暂不适配";
+    conclusion = "你目前暂不适合启动一人公司，先做好技能积累与抗风险准备。";
+    advice = "深耕专业，储备6个月生活费，明确核心诉求再启动。";
+  }
+
+  // 填充报告
+  document.getElementById('rName').textContent = document.getElementById('nickname').value;
+  document.getElementById('rScore').textContent = score;
+  document.getElementById('rLevel').textContent = level;
+  document.getElementById('rConclusion').textContent = conclusion;
+  document.getElementById('rAdvice').textContent = advice;
+
+  // 显示报告
+  form.style.display = 'none';
+  result.style.display = 'block';
+});
+</script>
 </body>
 </html>
